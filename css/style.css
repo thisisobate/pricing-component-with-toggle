@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(240, 78%, 98%);
+  background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+  background-position: top right, bottom -270px left;
+  background-repeat: no-repeat no-repeat;
+  background-size: 280px;
+  /* min-height: 100vh; */
+  /* background-attachment: fixed; */
+}
+
+.main {
+  text-align: center;
+}
+
+.toggle_section {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.bg_blue {
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+}
