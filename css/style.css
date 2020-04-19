@@ -3,11 +3,19 @@ body {
   padding: 0;
   background-color: hsl(240, 78%, 98%);
   background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
-  background-position: top right, bottom -270px left;
+  background-position: top right, bottom left;
   background-repeat: no-repeat no-repeat;
   background-size: 280px;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   /* background-attachment: fixed; */
+  color: hsl(233, 13%, 49%);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .main {
@@ -22,14 +30,91 @@ body {
 .container {
   display: flex;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .box {
-  padding: 40px;
+  /* width: 240px;
+  height: 330px; */
   background-color: #fff;
+  /* padding: 20px 10px; */
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+}
+
+.box_middle {
+  /* width: 240px;
+  height: 330px;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-bottom: 50px;
+  padding-right: 10px; */
+  padding: 30px 30px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.box:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box_middle:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 .bg_blue {
   background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   color: #fff;
+}
+
+.price_switch {
+  font-weight: 700;
+  color: hsl(232, 13%, 33%);
+  font-size: 40px;
+}
+
+.price_switch > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.dollar_sign {
+  font-size: 23px;
+}
+
+.light_line > hr {
+  width: 140px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.light_line > hr {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  color: white;
+  padding: 10px 80px;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  margin-top: 20px;
+}
+
+.button_light {
+  color: hsl(233, 13%, 49%);
+  padding: 10px 80px;
+  background-color: #fff;
+  margin-top: 20px;
 }
