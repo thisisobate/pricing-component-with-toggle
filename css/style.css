@@ -90,7 +90,7 @@ body {
 }
 
 .light_line > hr {
-  width: 140px;
+  width: 240px;
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
@@ -117,4 +117,24 @@ a {
   padding: 10px 80px;
   background-color: #fff;
   margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  body {
+    overflow: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .box {
+    margin-bottom: 50px;
+  }
+
+  .box_middle {
+    margin-bottom: 50px;
+  }
 }
