@@ -25,6 +25,7 @@ body {
 .toggle_section {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -72,10 +73,15 @@ body {
   color: #fff;
 }
 
+.light_txt {
+  color: #fff;
+}
+
 .price_switch {
   font-weight: 700;
   color: hsl(232, 13%, 33%);
   font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .price_switch > p {
@@ -122,6 +128,7 @@ a {
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
+  margin: 0 20px;
 }
 .theme-switch {
   display: inline-block;
@@ -135,7 +142,7 @@ a {
 }
 
 .slider {
-  background-color: #ccc;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -157,7 +164,7 @@ a {
 }
 
 input:checked + .slider {
-  background-color: #66bb6a;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
 input:checked + .slider:before {
@@ -170,6 +177,30 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+#monthly {
+  display: none;
+}
+
+#annual {
+  display: block;
+}
+
+#monthly2 {
+  display: none;
+}
+
+#annual2 {
+  display: block;
+}
+
+#monthly3 {
+  display: none;
+}
+
+#annual3 {
+  display: block;
 }
 
 @media (max-width: 500px) {
