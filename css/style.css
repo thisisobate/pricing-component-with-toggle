@@ -116,6 +116,20 @@ a {
   padding: 10px 80px;
   background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   margin-top: 20px;
+  border-radius: 7px;
+}
+
+.button:hover {
+  background-image: none;
+  background-color: #fff;
+  border: 1px solid black;
+  color: hsl(233, 13%, 49%);
+}
+
+.button_light:hover {
+  background-color: hsl(237, 63%, 64%);
+  border: 1px solid white;
+  color: white;
 }
 
 .button_light {
@@ -123,12 +137,21 @@ a {
   padding: 10px 80px;
   background-color: #fff;
   margin-top: 20px;
+  border-radius: 7px;
 }
 
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
   margin: 0 20px;
+}
+
+.slider:hover {
+  background-image: linear-gradient(hsl(236, 30%, 78%), hsl(238, 29%, 81%));
+}
+
+input:checked + .slider:hover {
+  background-image: linear-gradient(hsl(236, 30%, 78%), hsl(238, 29%, 81%));
 }
 .theme-switch {
   display: inline-block;
